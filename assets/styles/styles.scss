@@ -1,0 +1,28 @@
+// libraries
+@import './libraries/slick/slick';
+@import './libraries/aos/aos.css';
+@import './bootstrap'; // customized
+
+// custom
+@import './const';
+@import './icons';
+@import './fonts';
+
+// global
+@import './global';
+
+// header, footer, backgrounds
+@import './components/header/header';
+@import './components/footer/footer';
+@import './components/backgrounds/backgrounds';
+
+// sections
+@import './components/sections/hero-banner-section';
+@import './components/sections/performance-section';
+@import './components/sections/stats-section';
+@import './components/sections/clients-section';
+@import './components/sections/newsletters-section';
+@import './components/sections/contact-us-section';
+
+// customization
+@import './components/bootstrap/modal';
