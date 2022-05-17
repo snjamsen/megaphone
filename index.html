@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Mowpod: Grow your Podcast Downloads</title>
+    <title>Megaphone: boost your podcast!</title>
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,39 +34,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,900;1,400;1,500;1,600;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css"/>
-    <link rel="preload" as="image" href="./assets/images/backgrounds/rainbow.png"/>
+    <link rel="preload" as="image" href="./assets/images/rainbow.png"/>
     <link rel="preload" as="image" href="./assets/images/gifs/computer.gif"/>
 </head>
 <body>
+
+    <div class="background">
+        <div class="background__rainbow">
+            <img class="rainbow-first rellax data-rellax-speed="-7"" src="./assets/images/rainbow.png" alt=" background rainbow image">
+            <img class="rainbow-second rellax data-rellax-speed="-7"" src="./assets/images/rainbow-second.png" alt="background rainbow image">
+        </div>
+        <div class="background__airpod">
+            <img class="rellax data-rellax-speed="2"" src="./assets/images/gifs/airpod-right.gif" alt="airpod image">
+            <img class="rellax data-rellax-speed="2"" src="./assets/images/gifs/airpod-left.gif" alt="airpod image">
+        </div>
+    </div>
+
     <header>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-3 d-none d-md-block"></div>
-                <div class="col-6">
+        <div class="container"> 
+            <div class="row  d-flex justify-content-between"> 
+               <div class="col-md-4"> 
+                  <!-- column 1 //--> 
+                  <div class="row justify-content-start">
+                    <div class="col-auto">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="./assets/images/mowpod-boost-logo.png" alt="Mowpod Logo"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               </div> 
+               <div class="col-md-4"> 
+                  <!-- column 2 //--> 
                     <div class="row justify-content-center">
                         <div class="col-auto">
                             <div class="logo">
                                 <a href="#">
-                                    <img src="./assets/images/logo.svg" alt="Mowpod Logo"/>
+                                    <img src="./assets/images/megaphone-logo.png" alt="Mowpod Logo"/>
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="row justify-content-end">
-                        <div class="col-auto">
-                            <div class="burgermenu-open">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
+               </div> 
+               <div class="col-md-4 d-flex justify-content-end align-items-center"> 
+                    <!-- column 3 //--> 
+                    <div class="col-6 col-md-3">
+                        <div class="row justify-content-end">
+                            <div class="col-auto">
+                                <div class="burgermenu-open">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </div> 
+            </div> 
+        </div> 
     </header>
+
     <div class="burgermenu">
         <div class="row">
             <div class="col-12">
@@ -81,18 +109,18 @@
             <div class="col-12">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a href="/" class="nav-link">
+                        <a href="https://mowpod.com/" class="nav-link">
                             Home
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/podcasts" class="nav-link">
+                        <a href="https://mowpod.com/podcasts" class="nav-link">
                             Podcasts
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/boost" class="nav-link">
-                            Boost
+                        <a href="https://mowmedia.com/" target="_blank" class="nav-link">
+                            mowMedia
                         </a>
                     </li>
                     <li class="nav-item">
@@ -105,265 +133,134 @@
             </div>
         </div>
     </div>
+
     <main>
-        <section class="backgrounds">
-            <div class="background-sun"></div>
-            <div class="background-scratches"></div>
-        </section>
-        <section class="hero-banner">
-            <div class="section-backgrounds">
-                <div class="background-rainbow"></div>
-                <div class="background-microphone rellax" data-rellax-speed="-2"></div>
-                <div class="background-airpod-right rellax" data-rellax-speed="2"></div>
+        <div class="main container">
+            <div class="title-header">
+                <!-- Insert preview image below -->
+                <img src="/assets/images/podcast-preview-img.png" alt="podcast preview" class="podcast-preview">
+                <div class="title-header__text">
+                    <div class="orange-text">
+                        <span>Megaphone has partnered with mowpod to get you more IAB.2.0 qualified downloads to your podcast!</span>
+                    </div>
+                    <div class="choose-episode">
+                        <span>Use mowPod Boost to get more listens to episode:</span>
+                    </div>
+                    <!-- Insert episode title below -->
+                    <div class="title-header__text--title">
+                        <span>Karaoke from around the world</span>
+                    </div>
+                    <!-- Insert episode subtitle below -->
+                    <div class="title-header__text--subtitle">
+                        <span>This week, we (colectively) took a vacation to travel the world and sign songs from the far reaches of the planet.</span>
+                    </div>
+                </div>
             </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10 text-center">
-                        <div class="section-title">
-                            <h1 class="rotate" data-aos="fade-up" data-aos-delay="500" data-aos-duration="300">
-                                Podcast audience growth agency
-                            </h1>
+
+            <div class="title-form">
+                <form>
+                    <label for="title-form__input-title" class="orange-text">Title</label>
+                    <div>
+                        <textarea class="title-form__input-title" id="title-form__input-title" name="input-title" type="text" maxlength="40" placeholder="Enter podcast title" require></textarea>
+                        <span class="title-form__input-title--display">0/40</span>
+                    </div>
+                    <label for="title-form__input-subtitle" class="orange-text">Subtitle</label>
+                    <div>
+                        <textarea class="title-form__input-subtitle" id="title-form__input-subtitle" name="input subtitle" type="text" maxlength="111"  placeholder="Enter podcast subtitle" require></textarea>
+                        <span class="title-form__input-subtitle--display">0/111</span>
+                    </div>
+                    <label for="title-form__rss" class="orange-text">RSS Link</label>
+                    <div>
+                        <textarea class="title-form__input-rss" id="title-form__input-rss" name="input rss link" type="text" maxlength="74"  placeholder="Enter RSS Link" require></textarea>
+                        <span class="title-form__input-rss--display">0/74</span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="boost">
+                <div class="boost__container">
+                    <div class="boost__counter">
+                        <input class="boost__counter--input" type="number" value="500" min="300" require>
+                        <span>@ $.80 per download = <span class="boost__counter--sum orange-text">
+                            $400
+                        </span></span>
+                    </div>
+                    <div class="boost__duration">
+                        <span>Duration:</span>
+                        <input class="boost__duration--input" type="number" value="7" min="1" require>
+                        <span>Days<br><span class="dowloads-per-day">(approx <span class="approx-dowloads"></span>donwloads per day)</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Payment information</h3>
+                <div class="card__form">
+                    <div class="card__form--container">
+                        <div class="card__form--figure">
+                            <div class="card-view">
+                                <img src="assets/images/card-logo.png" alt="card logo">
+                                <div class="card_number">
+                                    <span class="set_card_number">0000 0000 0000 0000</span>
+                                </div>
+                                <div class="card_name">
+                                    <span class="user_name">John Doe</span>
+                                </div>
+                                <div class="card_expire">
+                                    <span class="user_card_cvv">MM/YY</span>
+                                </div>
+                            </div>
+                            <div class="card-backward">
+                                <div class="magn"></div>
+                                <div class="cvv"></div>
+                            </div>
                         </div>
-                        <div class="section-description" data-aos="fade-up" data-aos-delay="800" data-aos-duration="600">
-                            <p>
-                                mowPod is the largest driver of engaged listeners to many of the most prominent podcasts in the US.
-                                Need to grow your podcast audience with real, engaged listeners while meeting your growth goals
-                                against realistic KPIs?<br/>
-                                <span>Look no further!</span>
-                            </p>
+                        <div class="card-input-number--container">
+                            <div class="card-input--number">
+                                <span>Card Number</span>
+                                <input type="text" id="user_card_number_input" placeholder="0000 0000 0000 0000" onkeyup="userCardNumber(this.value)" data-slots="0" data-accept="\d" require>
+                            </div> 
+                            <div class="exp-cvv--container">
+                                <div class="card-input--exp">
+                                    <span>Expiration date</span>
+                                    <input type="text" onkeyup="usercardcvv(this.value)" placeholder="MM/YY" data-slots="MY" require>
+                                </div>
+                                <div class="card-input--cvv">
+                                    <span>CVV Code</span>
+                                    <input type="text" placeholder="000" data-slots="0" data-accept="\d" size="3" require>
+                                </div>
+                            </div>
                         </div>
-                        <div class="section-actions" data-aos="fade-up" data-aos-delay="800" data-aos-duration="600">
-                            <button class="button" data-bs-toggle="modal" data-bs-target="#scheduleDemo">
-                                SCHEDULE A DEMO
-                            </button>
+                    </div>
+                    <div class="card-input-name--container">
+                        <div class="card-input--name">
+                            <span>Name on Card</span>
+                            <input type="text" id="user_name_input" onkeyup="userName(this.value)" placeholder="John Doe" maxlength="25" require>
+                        </div>
+                        <div class="card-input--zip">
+                            <span>ZIP Code</span>
+                            <input type="text" id="user_zip-code" placeholder="00000" maxlength="6" require>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="performance">
-            <div class="section-backgrounds">
-                <div class="background-airpod-left rellax" data-rellax-speed="2"></div>
-            </div>
-            <div class="container">
-                <div class="row align-items-center gy-5">
-                    <div class="col-lg-5 text-center">
-                        <div class="podcast-slider">
-                            <div class="podcast-block">
-                                <img src="./assets/images/podcasts/podcast-1.png" alt=""/>
-                            </div>
-                            <div class="podcast-block">
-                                <img src="./assets/images/podcasts/podcast-1.png" alt=""/>
-                            </div>
-                            <div class="podcast-block">
-                                <img src="./assets/images/podcasts/podcast-1.png" alt=""/>
-                            </div>
-                            <div class="podcast-block">
-                                <img src="./assets/images/podcasts/podcast-1.png" alt=""/>
-                            </div>
-                            <div class="podcast-block">
-                                <img src="./assets/images/podcasts/podcast-1.png" alt=""/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 text-center text-md-start">
-                        <div class="section-title" data-aos="fade-up" data-aos-offset="-100">
-                            <h2>
-                                Pure performance
-                            </h2>
-                        </div>
-                        <div class="section-description" data-aos="fade-left" data-aos-offset="-100">
-                            <p>
-                                mowPod is your go-to growth partner. We get paid only for performance.
-                            </p>
-                            <ul class="dotted color-yellow align-items-center align-items-md-start">
-                                <li>
-                                    No Guesswork
-                                </li>
-                                <li>
-                                    No CPC or CPM
-                                </li>
-                                <li>
-                                    Pay per IAB 2.0 Download
-                                </li>
-                                <li>
-                                    Free design work
-                                </li>
-                                <li>
-                                    Free guidance
-                                </li>
-                                <li>
-                                    Hit your KPIs
-                                </li>
-                            </ul>
-                            <p>
-                                We act like your ad agency but without the high (or any) agency fees. mowPod gives you FREE consulting
-                                on best advertising practices, ad and graphic design, and podcasting in general - we want you to win!
-                            </p>
-                        </div>
+
+            <div class="submit-boost">
+                <h1>Total to be billed: <span class="boost-sum orange-text">$400</span></h1>
+                <span class="submit-boost--description">Boost will go into queue once and is expected to go live within a few hours. Cancellations require 24 hours notice and you will be billed for the downloads received if you cancel during the duration of the campaign. Dowloads will appear as mozilla or chrome in your megaphone and chartable statistics.</span>
+                <div class="agree-terms">
+                    <span>I understand the terms of use:</span>
+                    <div class="agree-terms--checkbox">
+                        <input type="checkbox" name="" id="agree-terms--checkbox" value="1">
+                        <label for="agree-terms--checkbox"></label>
                     </div>
                 </div>
+                <button class="submit-boost--button">Boost now</button>
             </div>
-        </section>
-        <section class="stats">
-            <div class="section-backgrounds">
-                <div class="background-circled-rainbow"></div>
-                <div class="background-marker"></div>
-            </div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7 text-center text-md-start">
-                        <div class="section-title" data-aos="fade-up" data-aos-offset="-100">
-                            <h2>
-                                Your stats
-                            </h2>
-                        </div>
-                        <div class="section-description" data-aos="fade-right" data-aos-offset="-100">
-                            <p>
-                                Everything is based off of the stats in your hosting platform. mowPod Boost campaigns will typically
-                                display as a browser (Safari, Chrome, Mozilla, etc.) in Source or User Agent. Combine that with the
-                                specific dates our campaign is running and the episodes we are promoting, and attribution becomes
-                                crystal clear. You’ll know exactly how many IAB downloads you are getting from mowPod.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="clients">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-7 text-center">
-                        <div class="section-title" data-aos="fade-up">
-                            <h2>
-                                Clients and partners
-                            </h2>
-                        </div>
-                        <div class="section-description" data-aos="fade-up">
-                            <p>
-                                mowPod is proud to work with a long list of incredible podcast creators, networks, and agencies
-                                including:
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cassette-row">
-                    <div class="row justify-content-center gy-4">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="cassette-block" data-aos="fade-up-left" data-aos-delay="200" data-aos-offset="-100">
-                                <a href="#">
-                                    <img src="./assets/images/gifs/cassette-1.gif" alt="Podcast Cassette 1"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="cassette-block" data-aos="fade-up-left" data-aos-delay="300" data-aos-offset="-100">
-                                <a href="#">
-                                    <img src="./assets/images/gifs/cassette-2.gif" alt="Podcast Cassette 1"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="cassette-block" data-aos="fade-up-left" data-aos-delay="400" data-aos-offset="-100">
-                                <a href="#">
-                                    <img src="./assets/images/gifs/cassette-3.gif" alt="Podcast Cassette 1"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-4 mt-md-3 gy-4">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="cassette-block" data-aos="fade-up-right" data-aos-delay="200" data-aos-offset="-150">
-                                <a href="#">
-                                    <img src="./assets/images/gifs/cassette-4.gif" alt="Podcast Cassette 1"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="cassette-block" data-aos="fade-up-right" data-aos-delay="300" data-aos-offset="-150">
-                                <a href="#">
-                                    <img src="./assets/images/gifs/cassette-5.gif" alt="Podcast Cassette 1"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="cassette-block" data-aos="fade-up-right" data-aos-delay="400" data-aos-offset="-150">
-                                <a href="#">
-                                    <img src="./assets/images/gifs/cassette-6.gif" alt="Podcast Cassette 1"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="cassette-block" data-aos="fade-up-right" data-aos-delay="500" data-aos-offset="-150">
-                                <a href="#">
-                                    <img src="./assets/images/gifs/cassette-7.gif" alt="Podcast Cassette 1"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="newsletters">
-            <div class="section-backgrounds">
-                <div class="background-computer rellax" data-rellax-speed="-1"></div>
-            </div>
-            <div class="container">
-                <div class="row justify-content-end">
-                    <div class="col-md-7 text-center">
-                        <div class="section-title" data-aos="fade-up" data-aos-offset="-150">
-                            <h2>
-                                MowMedia Newsletters
-                            </h2>
-                        </div>
-                        <div class="section-description" data-aos="fade-right" data-aos-offset="-150">
-                            <p>
-                                Have an email newsletter? mowMedia is the ticket for engaged subscribers at scale for many of the
-                                largest newsletters in the US, including Morning Brew, The Hustle, PC Mag, The GIST, Front Office
-                                Sports, and many more. Using the same pay-for-performance strategy that has made our podcast listener
-                                acquisition business a success, mowMedia will get you the long tail subscribers you have been looking
-                                for.
-                            </p>
-                        </div>
-                        <div class="section-actions" data-aos="fade-up" data-aos-offset="-150">
-                            <a href="#">
-                                <button class="button">
-                                    Visit MowMedia
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contact-us">
-            <div class="section-backgrounds">
-                <div class="background-rainbow"></div>
-            </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10 text-center">
-                        <div class="section-title">
-                            <h2 class="rotate" data-aos="fade-up" data-aos-offset="-150">
-                                Contact us today to see how MowPod can grow your podcast while hitting listenership KPIs.
-                                Your audience is out there - let us help you connect with them!
-                            </h2>
-                        </div>
-                        <div class="section-actions" data-aos="fade-up" data-aos-offset="-150">
-                            <button class="button" data-bs-toggle="modal" data-bs-target="#scheduleDemo">
-                                Schedule a demo
-                            </button>
-                        </div>
-                        <div class="section-additional" data-aos="fade-down-left" data-aos-offset="-150">
-                            <p>
-                                Or send us an email: <span><a href="mailto:hello@mowmedia.com">hello@mowmedia.com</a></span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+
     </main>
+
     <footer>
         <div class="container">
             <div class="row">
