@@ -13180,6 +13180,34 @@ footer .copyright-row {
   left: 35px;
 }
 
+@media screen and (max-width: 1400px) {
+  .background__airpod img {
+    width: 160px;
+  }
+  
+  .background__airpod img:nth-child(1) {
+    right: 35px;
+  }
+  
+  .background__airpod img:nth-child(2) {
+    left: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .background__airpod img {
+    width: 120px;
+  }
+  
+  .background__airpod img:nth-child(1) {
+    right: 25px;
+  }
+  
+  .background__airpod img:nth-child(2) {
+    left: 10px;
+  }
+}
+
 /* Input arrow hide */
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
