@@ -96,7 +96,7 @@ counter.init();
 })();
 
 
-
+// Card input and validator
 document.addEventListener('DOMContentLoaded', () => {
   for (const el of document.querySelectorAll("[placeholder][data-slots]")) {
   const pattern = el.getAttribute("placeholder"),
@@ -182,3 +182,15 @@ document.addEventListener('DOMContentLoaded', () => {
   
   //  validate_inputs.classList.remove('warning');
   //  if(validate_inputs has)
+
+const boostInput = document.querySelector('.boost__counter--input').value;
+
+console.log(boostInput)
+
+const sum = function (number) {
+  return number * 0.8;
+}
+
+number(boostInput);
+
+console.log(sum);

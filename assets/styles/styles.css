@@ -12774,8 +12774,6 @@ footer .copyright-row {
 }
 
 /* Card */
-
-
 .card h3 {
   /* font-size: 36px; */
   font-size: 32px;
@@ -13058,7 +13056,7 @@ footer .copyright-row {
   height: 19px;
 }
 
-.submit-boost--button {
+.submit-boost--button, .thank-you-button {
   cursor: pointer;
   padding: 30px 60px 25px 60px;
   background: url(../images/button.png) no-repeat center;
@@ -13070,12 +13068,12 @@ footer .copyright-row {
   border: none;
   outline: none;
   transition: 0.2s ease;
-  width: 320px;
+  width: 290px;
   height: 100px;
   margin-bottom: 20px;
 }
 
-.submit-boost--button:hover {
+.submit-boost--button:hover, .thank-you-button:hover {
   filter: brightness(110%);
   transform: scale(1.05) rotate(-2.5deg);
 }
@@ -13091,18 +13089,27 @@ footer .copyright-row {
 /* Thank you page styles */
 
 .thnx .container {
-  max-width: 1040px;
+  /* max-width: 1040px; */
 }
 
-.thank-you-title{
+.thank-you-title {
   display: flex;
   justify-content: center;
-  margin-bottom: 80px;
+  margin: 40px auto;
 }
 
-.thank-you-title img {
-  width: 80%;
-  max-width: 900px;
+.thank-you-title h1 {
+  transform: rotate(-3.5deg);
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .thank-you-title {
+    margin-bottom: 70px;
+  }
+  .thank-you-title h1 {
+    font-size: 130px;
+  }
 }
 
 .thank-you {
@@ -13115,7 +13122,7 @@ footer .copyright-row {
 }
 
 .thank-you p {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 800;
   line-height: 1.1;
   text-transform: uppercase;
@@ -13145,8 +13152,12 @@ footer .copyright-row {
   }
 }
 
+.thank-you-button {
+  margin-top: 30px;
+}
+
 /* Background elements */
-.background {
+.backgrounds {
   position: relative;
 }
 
@@ -13164,6 +13175,19 @@ footer .copyright-row {
   top: 1500px;
 }
 
+.background-sun {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100vh;
+  top: 300px;
+  left: 0;
+  background-image: url(../images/sun.png);
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
+}
+
 .background__airpod img {
   position: absolute;
   width: 230px;
@@ -13172,39 +13196,42 @@ footer .copyright-row {
 
 .background__airpod img:nth-child(1) {
   top: 170px;
-  right: 55px;
+  right: 75px;
 }
 
 .background__airpod img:nth-child(2) {
   top: 1300px;
-  left: 35px;
+  left: 55px;
 }
 
 @media screen and (max-width: 1400px) {
   .background__airpod img {
     width: 160px;
   }
-  
   .background__airpod img:nth-child(1) {
     right: 35px;
   }
-  
   .background__airpod img:nth-child(2) {
     left: 15px;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .background__airpod img {
     width: 120px;
   }
-  
   .background__airpod img:nth-child(1) {
+    top: 200px;
     right: 25px;
   }
-  
   .background__airpod img:nth-child(2) {
     left: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .background__airpod img {
+    display: none;
   }
 }
 
