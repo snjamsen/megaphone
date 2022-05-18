@@ -12623,10 +12623,29 @@ footer .copyright-row {
   width: 100%;
 }
 
+@media screen and (max-width: 1074px) {
+  .title-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    flex-direction: column;
+  }
+}
+
 .title-header img {
   border-radius: 15px;
   width: 340px;
   height: 340px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1074px) {
+  .title-header img {
+    max-width: 340px;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .title-header__text {
@@ -12634,6 +12653,13 @@ footer .copyright-row {
   flex-direction: column;
   justify-content: end;
   margin-left: 55px;
+}
+
+@media screen and (max-width: 1074px) {
+  .title-header__text {
+    margin-top: 25px;
+    margin-left: 0;
+  }
 }
 
 .title-header__text .orange-text {
@@ -12775,12 +12801,12 @@ footer .copyright-row {
 
 /* Card */
 .card h3 {
-  /* font-size: 36px; */
   font-size: 32px;
   font-style: italic;
   text-align: center;
   text-transform: uppercase;
   padding-bottom: 50px;
+  text-shadow: none;
 }
 
 .card__form {
@@ -12864,7 +12890,7 @@ footer .copyright-row {
   bottom: 20px;
 }
 
-.card__form input[type="text"] {
+.card__form input[type="text"], .card__form input[type="email"], .card__form input[type="password"] {
   font-family: 'Menlo', sans-serif;
   font-size: 28px;
   color: #fff;
@@ -12922,8 +12948,9 @@ footer .copyright-row {
   text-align: left;
 }
 
-.card-input-number--container span,
-.card-input-name--container span {
+.card-input-number--container label,
+.card-input-name--container label,
+.card-input--login label {
   display: inline-block;
   font-size: 28px;
   font-weight: 600;
@@ -12937,13 +12964,18 @@ footer .copyright-row {
   padding-bottom: 40px;
 }
 
+@media screen and (max-width: ) {
+  
+}
+
 .card-input-name--container {
   display: flex;
   width: 100%;
 }
 
 .card-input-number--container div,
-.card-input-name--container div {
+.card-input-name--container div,
+.card-input--login div {
   display: flex;
   flex-direction: column;
 }
@@ -12952,6 +12984,15 @@ footer .copyright-row {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 40px;
+}
+
+@media screen and (max-width: 720px) {
+  .card-input-number--container .exp-cvv--container {
+    flex-direction: column;
+  }
+  .exp-cvv--container {
+    max-width: 240px;
+  }
 }
 
 .card-input-name--container {
@@ -12978,6 +13019,19 @@ footer .copyright-row {
 .card-input--zip {
   width: 25%;
   min-width: 150px;
+}
+
+.card-input-number--container .exp-cvv--container {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.card-input--login {
+  border-top: 1px solid rgba(250, 250, 250, 0.15);
+  width: 100%;
+  padding-top: 35px;
+  margin-top: 15px;
 }
 
 .submit-boost {

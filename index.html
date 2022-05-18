@@ -139,7 +139,7 @@
         <div class="main container">
             <div class="title-header">
                 <!-- Insert preview image below -->
-                <img class="podcast-preview" src="/assets/images/podcast-preview-img.png" alt="podcast preview">
+                <img class="podcast-preview" src="./assets/images/podcast-preview-img.png" alt="podcast preview">
                 <div class="title-header__text">
                     <div class="orange-text">
                         <span>Megaphone has partnered with mowpod to get you more IAB.2.0 qualified downloads to your podcast!</span>
@@ -170,7 +170,7 @@
                         <textarea class="title-form__input-subtitle" id="title-form__input-subtitle" name="input subtitle" type="text" maxlength="111"  placeholder="Enter podcast subtitle" require></textarea>
                         <span class="title-form__input-subtitle--display">0/111</span>
                     </div>
-                    <label for="title-form__rss" class="orange-text">RSS Link</label>
+                    <label for="title-form__rss" class="orange-text">RSS to RSS Feed</label>
                     <div>
                         <textarea class="title-form__input-rss" id="title-form__input-rss" name="input rss link" type="text" maxlength="74"  placeholder="Enter RSS Link" require></textarea>
                         <span class="title-form__input-rss--display"></span>
@@ -218,29 +218,39 @@
                         </div>
                         <div class="card-input-number--container">
                             <div class="card-input--number">
-                                <span>Card Number</span>
-                                <input type="text" id="user_card_number_input" placeholder="0000 0000 0000 0000" onkeyup="userCardNumber(this.value)" data-slots="0" data-accept="\d" require>
+                                <label for="number-input">Card Number</label>
+                                <input type="text" name="number-input" id="user_card_number_input" placeholder="0000 0000 0000 0000" onkeyup="userCardNumber(this.value)" data-slots="0" data-accept="\d" require>
                             </div> 
                             <div class="exp-cvv--container">
                                 <div class="card-input--exp">
-                                    <span>Expiration date</span>
-                                    <input type="text" onkeyup="usercardcvv(this.value)" placeholder="MM/YY" data-slots="MY" require>
+                                    <label for="card-exp-date">Expiration date</label>
+                                    <input type="text" name="card-exp-date" id="user_card_exp-date" onkeyup="usercardcvv(this.value)" placeholder="MM/YY" data-slots="MY" require>
                                 </div>
                                 <div class="card-input--cvv">
-                                    <span>CVV Code</span>
-                                    <input type="text" placeholder="000" data-slots="0" data-accept="\d" size="3" require>
+                                    <label for="card-cvv">CVV Code</label>
+                                    <input type="text" name="card-cvv" id="card_cvv" placeholder="000" data-slots="0" data-accept="\d" size="3" require>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="card-input-name--container">
                         <div class="card-input--name">
-                            <span>Name on Card</span>
-                            <input type="text" id="user_name_input" onkeyup="userName(this.value)" placeholder="John Doe" maxlength="25" require>
+                            <label for="user-name">Name on Card</label>
+                            <input type="text" name="user-name" id="user_name_input" onkeyup="userName(this.value)" placeholder="John Doe" maxlength="25" require>
                         </div>
                         <div class="card-input--zip">
-                            <span>ZIP Code</span>
-                            <input type="text" id="user_zip-code" placeholder="00000" maxlength="6" require>
+                            <label for="zip-code">ZIP Code</label>
+                            <input type="text" name="zip-code" id="user_zip-code" placeholder="00000" maxlength="6" require>
+                        </div>
+                    </div>
+                    <div class="card-input--login">
+                        <div class="card-input--mail">
+                            <label for="login">Email address</label>
+                            <input type="text" name="login" id="user_login" placeholder="email" maxlength="25" require>
+                        </div>
+                        <div class="card-input--password">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="user_password" placeholder="•••••••••••••••" maxlength="18" require>
                         </div>
                     </div>
                 </div>
