@@ -12699,11 +12699,11 @@ footer .copyright-row {
   width: 100%;
   padding-left: 25px;
   padding-right: 25px;
-  overflow: hidden;
-  resize: none;
-
   padding-top: 20px;
   line-height: 20px;
+
+  overflow: hidden;
+  resize: none;
 }
 
 .title-form textarea::placeholder {
@@ -12744,10 +12744,9 @@ footer .copyright-row {
   background-color: var(--transparent-gray);
   display: flex;
   flex-direction: column;
-  padding: 30px 15px;
+
+  padding: 30px;
 }
-
-
 
 .boost__container div {
   display: flex;
@@ -12967,7 +12966,6 @@ footer .copyright-row {
   display: inline-block;
   font-size: 28px;
   font-weight: 600;
-
   margin-bottom: 15px;
 }
 
