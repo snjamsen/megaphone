@@ -12768,7 +12768,14 @@ footer .copyright-row {
 .title-form div {
   display: flex;
   align-items: flex-end;
+  flex-wrap: nowrap;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 920px) {
+  .title-form div {
+    flex-wrap: wrap;
+  }
 }
 
 .title-form label {
@@ -12781,6 +12788,18 @@ footer .copyright-row {
 @media screen and (max-width: 920px) {
   .title-form label {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .title-form label {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title-form label {
+    font-size: 20px;
   }
 }
 
@@ -12819,12 +12838,32 @@ footer .copyright-row {
   font-weight: 400;
 }
 
+@media screen and (max-width: 920px) {
+  .title-form textarea,
+  .title-form textarea::placeholder {
+  font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title-form textarea,
+  .title-form textarea::placeholder {
+  font-size: 18px;
+  }
+}
+
 .title-form span {
   display: inline-block;
   font-size: 14px;
   text-align: right;
-  padding-top: 5px;
+  padding-top: 10px;
   min-width: 67px;
+}
+
+@media screen and (max-width: 920px) {
+  .title-form span {
+    flex: auto;
+  }
 }
 
 /* Boost counter */
@@ -13242,26 +13281,32 @@ footer .copyright-row {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 30px;
   width: 100%;
   padding-top: 30px;
   margin-top: 30px;
 }
+
 
 @media screen and (max-width: 1220px) {
   .card-input--login {
     flex-wrap: wrap;
     gap: 0;
   }
-  .card-input--login div {
-    width: 100%;
-    max-width: 600px;
-  }
+}
+
+.card-input--login div {
+  width: 100%;
+  max-width: 600px;
+}
+
+.card-input--login .card-input--password {
+  max-width: 430px;
 }
 
 @media screen and (max-width: 920px) {
-  .card-input--login div {
-    max-width: none;
+  .card-input--login .card-input--password {
+    max-width: 600px;
   }
 }
 
