@@ -170,7 +170,7 @@
                         <textarea class="title-form__input-subtitle" id="title-form__input-subtitle" name="input subtitle" type="text" maxlength="111"  placeholder="Enter podcast subtitle" require></textarea>
                         <span class="title-form__input-subtitle--display">0/111</span>
                     </div>
-                    <label for="title-form__rss" class="orange-text">RSS to RSS Feed</label>
+                    <label for="title-form__input-rss" class="orange-text">RSS to RSS Feed Link</label>
                     <div>
                         <textarea class="title-form__input-rss" id="title-form__input-rss" name="input rss link" type="text" maxlength="74"  placeholder="Enter RSS Link" require></textarea>
                         <span class="title-form__input-rss--display"></span>
@@ -220,6 +220,10 @@
                             <div class="card-input--number">
                                 <label for="number-input">Card Number</label>
                                 <input type="text" name="number-input" id="user_card_number_input" placeholder="0000 0000 0000 0000" onkeyup="userCardNumber(this.value)" data-slots="0" data-accept="\d" require>
+                                <div class="card-input--exp-mob">
+                                    <label for="card-exp-date">Expiration date</label>
+                                    <input type="text" name="card-exp-date" id="user_card_exp-date" onkeyup="usercardcvv(this.value)" placeholder="MM/YY" data-slots="MY" require>
+                                </div>
                             </div> 
                             <div class="exp-cvv--container">
                                 <div class="card-input--exp">
@@ -243,6 +247,8 @@
                             <input type="text" name="zip-code" id="user_zip-code" placeholder="00000" maxlength="6" require>
                         </div>
                     </div>
+                </div>
+                <div class="card__login">
                     <div class="card-input--login">
                         <div class="card-input--mail">
                             <label for="login">Email address</label>
