@@ -13010,7 +13010,6 @@ footer .copyright-row {
 }
 
 .card__form input[type="text"],
-.card__form input[type="password"],
 .card__login input[type="email"],
 .card__login input[type="password"] {
   font-family: 'Menlo', sans-serif;
@@ -13028,10 +13027,9 @@ footer .copyright-row {
 
 @media screen and (max-width: 740px) {
   .card__form input[type="text"],
-  .card__form input[type="password"],
   .card__login input[type="email"], 
   .card__login input[type="password"] {
-    font-size: 22px;
+    font-size: 24px;
     min-height: 40px;
     padding: 10px 25px;
     margin-bottom: 20px;
@@ -13040,11 +13038,10 @@ footer .copyright-row {
 
 @media screen and (max-width: 500px) {
   .card__form input[type="text"], 
-  .card__form input[type="password"],
   .card__login input[type="email"], 
   .card__login input[type="password"] {
-    font-size: 18px;
-    border-radius: 12px;
+    font-size: 20px;
+    border-radius: 15px;
     min-height: 25px;
     padding: 5px 15px;
     margin-bottom: 10px;
@@ -13052,7 +13049,6 @@ footer .copyright-row {
 }
 
 .card__form input[type="text"]:focus,
-.card__form input[type="password"]:focus,
 .card-input--login input[type="email"]:focus,
 .card-input--login input[type="password"]:focus {
   color: #fff;
@@ -13134,7 +13130,7 @@ footer .copyright-row {
   .card-input-number--container label,
 .card-input-name--container label,
 .card-input--login label {
-  font-size: 18px;
+  font-size: 19px;
   }
 }
 
@@ -13195,7 +13191,6 @@ footer .copyright-row {
 
 @media screen and (max-width: 1220px) {
   .card-input-name--container {
-    justify-content: flex-start;
     gap: 20px;
     margin-top: 10px;
   }
