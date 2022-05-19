@@ -220,10 +220,6 @@
                             <div class="card-input--number">
                                 <label for="number-input">Card Number</label>
                                 <input type="text" name="number-input" id="user_card_number_input" placeholder="0000 0000 0000 0000" onkeyup="userCardNumber(this.value)" data-slots="0" data-accept="\d" require>
-                                <div class="card-input--exp-mob">
-                                    <label for="card-exp-date">Expiration date</label>
-                                    <input type="text" name="card-exp-date" id="user_card_exp-date" onkeyup="usercardcvv(this.value)" placeholder="MM/YY" data-slots="MY" require>
-                                </div>
                             </div> 
                             <div class="exp-cvv--container">
                                 <div class="card-input--exp">
@@ -232,7 +228,7 @@
                                 </div>
                                 <div class="card-input--cvv">
                                     <label for="card-cvv">CVV Code</label>
-                                    <input type="text" name="card-cvv" id="card_cvv" placeholder="000" data-slots="0" data-accept="\d" size="3" require>
+                                    <input type="password" name="card-cvv" id="card_cvv" placeholder="000" data-slots="0" data-accept="\d" size="3" require>
                                 </div>
                             </div>
                         </div>
@@ -263,7 +259,7 @@
             </div>
 
             <div class="submit-boost">
-                <h1>Total to be billed: <span class="boost-sum orange-text">$400</span></h1>
+                <h1>Total to be billed: <span class="boost-sum orange-text"></br>$400</span></h1>
                 <span class="submit-boost--description">Boost will go into queue once and is expected to go live within a few hours. Cancellations require 24 hours notice and you will be billed for the downloads received if you cancel during the duration of the campaign. Dowloads will appear as mozilla or chrome in your megaphone and chartable statistics.</span>
                 <div class="agree-terms">
                     <span>I understand the terms of use:</span>
