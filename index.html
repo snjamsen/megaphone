@@ -141,17 +141,17 @@
                 <form>
                     <label for="title-form__input-title" class="orange-text">Title</label>
                     <div>
-                        <textarea class="title-form__input-title" id="title-form__input-title" name="input-title" type="text" maxlength="40" placeholder="Enter podcast title" require></textarea>
+                        <textarea class="title-form__input-title" id="title-form__input-title" name="input-title" maxlength="40" placeholder="Enter podcast title" required></textarea>
                         <span class="title-form__input-title--display">0/40</span>
                     </div>
                     <label for="title-form__input-subtitle" class="orange-text">Subtitle</label>
                     <div>
-                        <textarea class="title-form__input-subtitle" id="title-form__input-subtitle" name="input subtitle" type="text" maxlength="111"  placeholder="Enter podcast subtitle" require></textarea>
+                        <textarea class="title-form__input-subtitle" id="title-form__input-subtitle" name="input subtitle" maxlength="111"  placeholder="Enter podcast subtitle" required></textarea>
                         <span class="title-form__input-subtitle--display">0/111</span>
                     </div>
                     <label for="title-form__input-rss" class="orange-text">RSS Feed Link</label>
                     <div>
-                        <textarea class="title-form__input-rss" id="title-form__input-rss" name="input rss link" type="text" maxlength="74"  placeholder="Enter RSS Feed Link" require></textarea>
+                        <textarea class="title-form__input-rss" id="title-form__input-rss" name="input rss link" maxlength="74"  placeholder="Enter RSS Feed Link" required></textarea>
                         <span class="title-form__input-rss--display"></span>
                     </div>
                 </form>
@@ -161,15 +161,15 @@
                 <div class="boost__container">
                     <!-- ? Boost counter (boost input value * 0.8 = sum) -->
                     <div class="boost__counter">
-                        <input class="boost__counter--input" type="number" value="500" min="300" require>
-                        <span>@ $.80 per download = <span class="boost__counter--sum orange-text"><br>
+                        <input class="boost__counter--input" type="number" value="500" min="300" required>
+                        <span>@ $.80 per download = <span class="boost__counter--sum orange-text"><br/>
                             $400
                         </span></span>
                     </div>
                     <div class="boost__duration">
                         <span class="boost__duration--first-span">Duration:</span>
-                        <input class="boost__duration--input" type="number" value="7" min="1" require>
-                        <span class="boost__duration--second-span">Days<br><span class="dowloads-per-day">(approx <span class="approx-dowloads"></span>donwloads per day)</span></span>
+                        <input class="boost__duration--input" type="number" value="7" min="1" required>
+                        <span class="boost__duration--second-span">Days<br/><span class="dowloads-per-day">(approx <span class="approx-dowloads">560</span>donwloads per day)</span></span>
                     </div>
                 </div>
             </div>
@@ -199,16 +199,16 @@
                         <div class="card-input-number--container">
                             <div class="card-input--number">
                                 <label for="number-input">Card Number</label>
-                                <input type="text" name="number-input" id="user_card_number_input" placeholder="0000 0000 0000 0000" onkeyup="userCardNumber(this.value)" data-slots="0" data-accept="\d" require>
+                                <input type="text" name="number-input" id="user_card_number_input" placeholder="0000 0000 0000 0000" onkeyup="userCardNumber(this.value)" data-slots="0" data-accept="\d" required>
                             </div> 
                             <div class="exp-cvv--container">
                                 <div class="card-input--exp">
                                     <label for="card-exp-date">Expiration date</label>
-                                    <input type="text" name="card-exp-date" id="user_card_exp-date" onkeyup="usercardcvv(this.value)" placeholder="MM/YY" data-slots="MY" require>
+                                    <input type="text" name="card-exp-date" id="user_card_exp-date" onkeyup="usercardcvv(this.value)" placeholder="MM/YY" data-slots="MY" required>
                                 </div>
                                 <div class="card-input--cvv">
                                     <label for="card-cvv">CVV Code</label>
-                                    <input type="text" name="card-cvv" id="card_cvv" placeholder="000" data-slots="0" data-accept="\d" size="3" require>
+                                    <input type="text" name="card-cvv" id="card_cvv" placeholder="000" data-slots="0" data-accept="\d" size="3" required>
                                 </div>
                             </div>
                         </div>
@@ -216,11 +216,11 @@
                     <div class="card-input-name--container">
                         <div class="card-input--name">
                             <label for="user-name">Name on Card</label>
-                            <input type="text" name="user-name" id="user_name_input" onkeyup="userName(this.value)" placeholder="John Doe" maxlength="25" require>
+                            <input type="text" name="user-name" id="user_name_input" onkeyup="userName(this.value)" placeholder="John Doe" maxlength="25" required>
                         </div>
                         <div class="card-input--zip">
                             <label for="zip-code">ZIP Code</label>
-                            <input type="text" name="zip-code" id="user_zip-code" placeholder="00000" maxlength="6" require>
+                            <input type="text" name="zip-code" id="user_zip-code" placeholder="00000" maxlength="6" required>
                         </div>
                     </div>
                 </div>
@@ -228,18 +228,18 @@
                     <div class="card-input--login">
                         <div class="card-input--mail">
                             <label for="login">Email address</label>
-                            <input type="email" name="login" id="user_login" placeholder="email" maxlength="25" require>
+                            <input type="email" name="login" id="user_login" placeholder="email" maxlength="25" required>
                         </div>
                         <div class="card-input--password">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="user_password" placeholder="•••••••••••••••" maxlength="64" require>
+                            <input type="password" name="password" id="user_password" placeholder="•••••••••••••••" maxlength="64" required>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="submit-boost">
-                <h1>Total to be billed: <span class="boost-sum orange-text"></br>$400</span></h1>
+                <h1>Total to be billed: <span class="boost-sum orange-text"><br/>$400</span></h1>
                 <span class="submit-boost--description">Boost will go into queue once and is expected to go live within a few hours. Cancellations require 24 hours notice and you will be billed for the downloads received if you cancel during the duration of the campaign. Dowloads will appear as mozilla or chrome in your megaphone and chartable statistics.</span>
                 <div class="agree-terms">
                     <span>I understand the terms of use:</span>
