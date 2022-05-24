@@ -1,5 +1,4 @@
 jQuery(document).ready(function($) {
-  
   // aos
   AOS.init();
 
@@ -12,14 +11,42 @@ jQuery(document).ready(function($) {
   $('.burgermenu-open, .burgermenu-close').on('click', function() {
     $('.burgermenu').toggleClass('active');
   });
-
 })
 
 
-// rellax
-var rellax = new Rellax('.rellax', {
-  center:true
-});
+/* Boost calculate */
+let boostResult = document.querySelector('.boost__counter--sum');
+let approxDownloads = document.querySelector('.approx-downloads');
+let boostValue;
+
+function boostInput(boost) {
+    boostValue = +boost.value;
+    boost = "$" + Math.floor((+boost.value * 0.8));
+    boostResult.innerHTML = boost;
+    console.log(boostValue);
+}
+
+function boostDuration(dur) {
+    dur = Math.floor(boostValue / +dur.value);
+    approxDownloads.innerHTML = dur + " ";
+}
+
+
+// Input title
+let titleLenght = document.querySelector('.title-form__input-title--display');
+
+function titleInput(title) {
+    title = title.value.length;
+    titleLenght.innerHTML = title + "/40";
+}
+
+// Input subtitle
+let subtitleLenght = document.querySelector('.title-form__input-subtitle--display');
+
+function subtitleInput(subtitle) {
+    subtitle = subtitle.value.length;
+    subtitleLenght.innerHTML = subtitle + "/111";
+}
 
 
 // Block enter on textarea
@@ -55,46 +82,6 @@ eleSubtitle.addEventListener('keydown', function (e) {
   }
 });
 
-// Character counter
-// Length counter for input title
-(() => {
-const counter = (() => {
-  const input = document.querySelector('.title-form__input-title'),
-    display = document.querySelector('.title-form__input-title--display'),
-    changeEvent = (evt) => display.innerHTML = (evt.target.value.length + "/40"),
-    getInput = () => input.value,
-    countEvent = () => input.addEventListener('keyup', changeEvent),
-    init = () => countEvent();
-
-  return {
-    init: init
-  }
-
-})();
-
-counter.init();
-
-})();
-// Length counter for input subtitle
-(() => {
-const counter = (() => {
-  const input = document.querySelector('.title-form__input-subtitle'),
-    display = document.querySelector('.title-form__input-subtitle--display'),
-    changeEvent = (evt) => display.innerHTML = (evt.target.value.length + "/111"),
-    getInput = () => input.value,
-    countEvent = () => input.addEventListener('keyup', changeEvent),
-    init = () => countEvent();
-
-  return {
-    init: init
-  }
-
-})();
-
-counter.init();
-
-})();
-
 
 // Card input and validator
 document.addEventListener('DOMContentLoaded', () => {
@@ -118,8 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
       el.addEventListener("focus", format);
       el.addEventListener("blur", () => el.value === pattern && (el.value=""));
       }
-      });
-  
+});
+
   var user_name = document.querySelector(".user_name");
   var set_card_number = document.querySelector(".set_card_number");
   var user_cardcvv = document.querySelector(".user_card_cvv")
@@ -130,67 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
       user_name.innerHTML = name; 
   } 
   
-  function userCardNumber(cardNumber){
-      set_card_number.innerHTML = cardNumber;
-  }
-  
-  function usercardcvv(cvv){
-      user_cardcvv.innerHTML=cvv; 
-  }
-  
-  var card = document.querySelector(".debit-card");
-  var click_pay = document.querySelector(".click-pay");
-  var left_side = document.querySelector(".left-side");
-  var right_side = document.querySelector(".right-side");
-  var success = document.querySelector(".success");
-  click_pay.addEventListener('click',function(){
-      
-      
-      if(!validateform()){ 
-          return false;
-      } 
-    right_side.style.display="none";
-    left_side.classList.toggle('wide');
-    left_side.style.display="block";
-    card.classList.add('d-none');
-       
-    setTimeout(function(){
-      success.classList.add('success_done');
-  }, 2000);
-    
-  setTimeout(function(){
-      success.classList.add('success_final');
-  }, 4000);
-     
-  });
-  
-  function validateform(){
-      validate=true;
-  var validate_inputs=document.querySelectorAll(".right-side input");  
-       
-       validate_inputs.forEach(function(input_valid){
-       input_valid.classList.remove('warning');
-       if(input_valid.hasAttribute('require')){
-           if(input_valid.value.length==0){
-               validate=false;
-               input_valid.classList.add('warning');
-           }
-       }
-  });
-    return validate;
-  }
-  
-  //  validate_inputs.classList.remove('warning');
-  //  if(validate_inputs has)
-
-const boostInput = document.querySelector('.boost__counter--input').value;
-
-console.log(boostInput)
-
-const sum = function (number) {
-  return number * 0.8;
+function userCardNumber(cardNumber){
+    set_card_number.innerHTML = cardNumber;
 }
-
-number(boostInput);
-
-console.log(sum);
+  
+function usercardcvv(cvv){
+      user_cardcvv.innerHTML=cvv; 
+}
