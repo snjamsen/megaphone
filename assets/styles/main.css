@@ -1116,7 +1116,7 @@ header .header {
 }
 
 .background__rainbow img.rainbow-first {
-    top: -50px;
+    top: 50px;
 }
 
 .background__rainbow img.rainbow-second {
