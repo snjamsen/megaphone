@@ -112,14 +112,25 @@ header .header {
 .main>div {
     background-color: var(--transparent-gray);
     border-radius: 15px;
+
     padding: 35px 55px;
     margin: 10px auto;
     min-width: 300px;
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 @media screen and (max-width: 1074px) {
     .main>div {
         padding: 30px 35px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .main>div {
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
     }
 }
 
