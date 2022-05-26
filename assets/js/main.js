@@ -17,13 +17,14 @@ jQuery(document).ready(function($) {
 /* Boost calculate */
 let boostResult = document.querySelector('.boost__counter--sum');
 let approxDownloads = document.querySelector('.approx-downloads');
+let boostSum = document.querySelector('.boost-sum');
 let boostValue;
 
 function boostInput(boost) {
     boostValue = +boost.value;
     boost = "$" + Math.floor((+boost.value * 0.8));
     boostResult.innerHTML = boost;
-    console.log(boostValue);
+    boostSum.innerHTML = boost;
 }
 
 function boostDuration(dur) {
