@@ -13,6 +13,37 @@
     color: var(--orange);
 }
 
+/* Preloader */
+
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    margin: 0;
+    background-image: url(../images/scratches.png);
+    background-size: 50%;
+    background-color: var(--background-color);
+    transition: opacity 400ms ease-in-out, visibility 0s 500ms;
+    overflow: hidden;
+  }
+
+.show-preloader {
+    visibility: visible;
+    opacity: 1;
+}
+
+.preloader img {
+    width: 150px;
+    height: auto;
+}
+
 /* Header */
 
 header .header {
@@ -277,7 +308,7 @@ header .header {
     }
 }
 
-.title-form div {
+.title-form--container div {
     display: flex;
     align-items: flex-end;
     flex-wrap: nowrap;
@@ -285,7 +316,7 @@ header .header {
 }
 
 @media screen and (max-width: 920px) {
-    .title-form div {
+    .title-form--container div {
         flex-wrap: wrap;
     }
 }
@@ -1122,6 +1153,8 @@ header .header {
 
 .background__rainbow img {
     width: 100%;
+    min-width: 320px;
+
     position: absolute;
     z-index: -1;
 }

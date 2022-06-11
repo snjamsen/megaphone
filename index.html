@@ -39,6 +39,8 @@
 </head>
 <body>
 
+    <div class="preloader"><img src="./assets/images/mowpod-boost-logo.png" alt="logotype"></div>
+
     <div class="backgrounds">
         <div class="background__rainbow">
             <img class="rainbow-first rellax data-rellax-speed="-7"" src="./assets/images/rainbow.png" alt=" background rainbow image">
@@ -112,7 +114,7 @@
     </div>
 
     <main>
-        <div class="main container">
+        <form class="main container">
             <div class="title-header">
 
                 <!-- Insert preview image below -->
@@ -138,7 +140,7 @@
             </div>
 
             <div class="title-form">
-                <form>
+                <div class="title-form--container">
                     <label for="title-form__input-title" class="orange-text">Title</label>
                     <div>
                         <textarea class="title-form__input-title" id="title-form__input-title" name="input-title" maxlength="40" onkeyup="titleInput(this)" placeholder="Enter podcast title" required></textarea>
@@ -154,7 +156,7 @@
                         <textarea class="title-form__input-rss" id="title-form__input-rss" name="input rss link" maxlength="74"  placeholder="Enter RSS Feed Link" required></textarea>
                         <span class="title-form__input-rss--display"></span>
                     </div>
-                </form>
+                </div>
             </div>
 
             <div class="boost">
@@ -199,16 +201,16 @@
                         <div class="card-input-number--container">
                             <div class="card-input--number">
                                 <label for="user_card_number_input">Card Number</label>
-                                <input type="text" name="user_card_number_input" id="user_card_number_input" placeholder="0000 0000 0000 0000" onkeyup="userCardNumber(this.value)" data-slots="0" data-accept="\d" required>
+                                <input type="text" name="user-card-number-input" id="user_card_number_input" placeholder="0000 0000 0000 0000" onkeyup="userCardNumber(this.value)" data-slots="0" data-accept="\d" required>
                             </div> 
                             <div class="exp-cvv--container">
                                 <div class="card-input--exp">
                                     <label for="user_card_exp-date">Expiration date</label>
-                                    <input type="text" name="user_card_exp-date" id="user_card_exp-date" onkeyup="usercardcvv(this.value)" placeholder="MM/YY" data-slots="MY" required>
+                                    <input type="text" name="user-card-exp-date" id="user_card_exp-date" onkeyup="usercardcvv(this.value)" placeholder="MM/YY" data-slots="MY" required>
                                 </div>
                                 <div class="card-input--cvv">
                                     <label for="card_cvv">CVV Code</label>
-                                    <input type="text" name="card_cvv" id="card_cvv" placeholder="000" data-slots="0" data-accept="\d" size="3" required>
+                                    <input type="text" name="card-cvv" id="card_cvv" placeholder="000" data-slots="0" data-accept="\d" size="3" required>
                                 </div>
                             </div>
                         </div>
@@ -216,11 +218,11 @@
                     <div class="card-input-name--container">
                         <div class="card-input--name">
                             <label for="user_name_input">Name on Card</label>
-                            <input type="text" name="user_name_input" id="user_name_input" onkeyup="userName(this.value)" placeholder="John Doe" maxlength="25" required>
+                            <input type="text" name="user-name_input" id="user_name_input" onkeyup="userName(this.value)" placeholder="John Doe" maxlength="25" required>
                         </div>
                         <div class="card-input--zip">
                             <label for="user_zip-code">ZIP Code</label>
-                            <input type="text" name="user_zip-code" id="user_zip-code" placeholder="00000" maxlength="6" required>
+                            <input type="text" name="user-zip-code" id="user_zip-code" placeholder="00000" maxlength="6" required>
                         </div>
                     </div>
                 </div>
@@ -228,11 +230,11 @@
                     <div class="card-input--login">
                         <div class="card-input--mail">
                             <label for="user_login">Email address</label>
-                            <input type="email" name="user_login" id="user_login" placeholder="email" maxlength="25" required>
+                            <input type="email" name="user-login" id="user_login" placeholder="email" maxlength="25" required>
                         </div>
                         <div class="card-input--password">
                             <label for="user_password">Password</label>
-                            <input type="password" name="user_password" id="user_password" placeholder="•••••••••••••••" maxlength="64" required>
+                            <input type="password" name="user-password" id="user_password" placeholder="•••••••••••••••" maxlength="64" required>
                         </div>
                     </div>
                 </div>
@@ -250,7 +252,7 @@
                 </div>
                 <a href="./thank-you.html"><button class="submit-boost--button">Boost now</button></a>
             </div>
-        </div>
+        </form>
     </main>
 
     <div class="d-line"></div>
@@ -347,7 +349,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-auto text-center">
                                     <div class="copyright-text">
-                                        © 2019-2021 mowMedia LLC, All Rights Reserved.
+                                        © 2019-2022 mowMedia LLC, All Rights Reserved.<br>
                                         <a href="#">&nbsp; privacy policy | terms of Use</a>
                                     </div>
                                 </div>
@@ -373,6 +375,7 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/rellax.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>

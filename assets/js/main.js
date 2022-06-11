@@ -13,6 +13,14 @@ jQuery(document).ready(function($) {
   });
 })
 
+// Preloader
+const preloader = document.querySelector('.preloader');
+
+preloader.classList.add('show-preloader');
+
+window.addEventListener('load', function () {
+    	preloader.classList.remove('show-preloader');
+});
 
 /* Boost calculate */
 let boostResult = document.querySelector('.boost__counter--sum');
